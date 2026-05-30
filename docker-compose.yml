@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build: .
+    environment:
+      VITE_API_URL: ${VITE_API_URL}
+    ports:
+      - "80:80"
+    networks:
+      - frontend_net
+
+networks:
+  frontend_net:
