@@ -1,4 +1,4 @@
-# Frontend Despacho — Innovatech Chile
+# Frontend Despacho — 
 
 Frontend desarrollado con **React + Vite** para la gestión de despachos de Innovatech Chile. Permite visualizar, registrar y administrar los despachos de la empresa a través de una interfaz web moderna y responsiva.
 
