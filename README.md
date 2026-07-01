@@ -1,4 +1,4 @@
-# Frontend Despacho — 
+# Frontend Despacho — Innovatech Chile
 
 Frontend desarrollado con **React + Vite** para la gestión de despachos de Innovatech Chile. Permite visualizar, registrar y administrar los despachos de la empresa a través de una interfaz web moderna y responsiva.
 
@@ -296,3 +296,7 @@ aws ecs describe-services --region us-east-1 \
 ## Infraestructura
 
 La aplicación corre en **ECS Fargate** (serverless, sin gestión de instancias EC2) dentro del clúster `innovatech-cluster`. El único punto de entrada público al sistema es el **ALB** (`alb-innovatech`); este contenedor no tiene IP pública alcanzable directamente — todo el tráfico externo pasa primero por el Security Group `alb-despacho-ep3` y luego por `frontend-ecs-ep3`, que solo acepta conexiones desde el SG del ALB.
+
+---
+
+**Cierre del proyecto:** 2026-07-01 — Encargo EP3-DevOps completo (Fases 1–8), evidencia de los indicadores IE1–IE7 documentada en este README.
